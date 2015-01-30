@@ -2,13 +2,17 @@
 /*------------cahmando font do google font------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Fira+Sans:300);
 /*------------css imagen da tela de detalhe------------------------*/
-img#detalhe
+#detalhe
 {
+position:absolute;
 position:fixed;
 top: 0px;
-width: 100.3%;
-height: 52%;
+width: 100%;
+height: 28.5em;
 left: 0px;
+border:solid 1px;
+
+  
 
 }
 
@@ -42,18 +46,21 @@ img#img-endereco
 /*------------css da tela informações sobre Cabrália----------------*/
 img#sobre
 {
-	width: 110.2%;
+	width: 98%;
 	height:220px;
-	margin-left:-15px;
+  margin-left: 0.8%;
+  border:solid  0.1px gray;
+  margin-top: -3rem;
 
 }
 img#sobre-detalhe
 {
 position:absolute;
 top: 0px;
-width: 97.2%;
-height: 52%;
-left: 0px;
+width: 98%;
+height: 207px;
+margin-left: 0.8%;
+border:solid 1px gray;
 }
 p#sobre
 {
@@ -65,9 +72,11 @@ p#sobre-texto
 	margin-top:210px;
 	font-family: Arial,sans-serif;
 	font-size: 15px;
+  text-indent: 15px;
+  padding: 5px;
 }
 /*------------css da descrição da tela de detalhe-------------------*/
-div#texto
+span#texto
 {
   width:95%;
   height: 230px;
@@ -75,7 +84,7 @@ div#texto
   padding-bottom: 7px;
 }
 /*------------css da contato da tela de detalhe--------------------*/
-div#contato
+span#contato
 {
   width: ;
   height: 107px;
@@ -95,18 +104,19 @@ li#telefone
 }
 
 /*------------css da caixa da tela de detalhe-------------------*/
-form#texto
+span#texto
 {
-padding: 10px 2px 2px 2px;
+
 font-family: Arial,sans-serif;
 font-size: 17px;
 position:absolute;
 left: 0px;
-top:190px;
-width: 96%;
-height: 310px;
-background:white;
+top:16em;
+width: 100%;
+height: 100%;
+background:#f0f0f0;
 margin: 0px 0px 0px 0px;
+padding: 0px;
 }
 
 /*------------css nao uzando--------------------------------------*/
@@ -144,28 +154,31 @@ left: 135px;
 }
 
 /*----------css barra de titulo da tela de detalhe--------*/
-div#hdetalhe
+span#hdetalhe
 {
-background: rgba(245, 0, 19, 0.72);
+background:#009688;
 position: absolute;
-top:152px;
-width: 96.6%;
+top:-2.5em;
+width: 100%;
 height:44px;
-left: 0%;
-padding: 1px;
+color:#fff;
+border-bottom:solid 1px white;
 }
 
 h2#titulo
 {
-font-family: Arial,sans-serif;
-font-size: 25px;
-color: white;
-position: absolute;
-top: -20px;
-width: 250px;
-left: 10px;
-padding: 5px;
-
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+border: medium none;
+margin: 0px;
+color: whitw;
+width: 90%;
+line-height: 2rem;
+list-style: outside none none;
+font-size: 27px;
+padding-top: 15px;
+padding-left: 8px;
 }
 /*---------------------------------tela de eventos----------------*/
 /*img new tela detalhe---------------*/
@@ -314,9 +327,23 @@ margin-right: 0.6rem;
 .icons-tela-detalhe
 {
 
-margin-top: -1.5rem;
+bottom: 0px;
+position: absolute;
 width: 96%;
 height:5rem;
 background:;
 text-align: center;
+}
+
+.span-tel
+{
+    width: 6rem;
+    height: 6rem;
+    border-radius:7rem;
+    bottom: 7px;
+    right: 7px;
+    position: absolute;
+    background: #4caf50;
+    z-index: 4;
+    position: fixed;
 }

@@ -114,6 +114,7 @@
      <div id="detalhe-list">
      </div> 
    </article>
+      <span class="span-tel"></span>
   </section>
   <!-- Final tela de detalhes -->
 
@@ -321,28 +322,30 @@
   <!-- template da tela de detalhes -->
   <script id="detalhe-tela-template" type="text/x-handlebars-template">
     {{# each detalhe}}
-      <div>
+ <img src="images/loader.gif" class="loader-D">
       <img id="detalhe" alt = "{{ name }}" src = "{{ imagens }}">
-       <div id="hdetalhe">     
+       
+          <span id="texto">
+        <span id="hdetalhe">     
           <h2 id="titulo">{{ nome }}</h2>
-        </div>
-          <form id="texto">
-          <div id="texto">
+        </span>
+         <p class="texto">
              {{ descricao }}
-        </div>
+        </p>
+        
         {{#if telefone}}
-          <div id="contato"> 
+          <span id="contato"> 
           <img id="telef" data-tel={{ telefone }} src="images/Fone.png"/> <p id="telef">{{ formatTelefone telefone }} </p>
         {{/if}}
         </br>
         {{#if endereco }}
-        <div class="icons-tela-detalhe">
+        <span class="icons-tela-detalhe">
         <img id="img-endereco" data-latitude= {{ latitude }} data-longitude = {{ longitude }} src="images/maps.png"/>
         <img id="img-youtube-video"src="images/youtube.png">
-        </div>
+        </span>
         {{/if}}
-        </div>
-      </form>
+        </span>
+      </span>
     {{/each}}
   </script>
 
