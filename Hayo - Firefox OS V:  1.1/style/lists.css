@@ -112,7 +112,7 @@ li a:active {
 }
 
 [data-type="list"] aside.pack-end {
-  float: right;
+  float: left;
   margin: 0 0 0 0.5rem;
   text-align: right;
 }
