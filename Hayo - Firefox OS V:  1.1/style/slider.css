@@ -1,0 +1,61 @@
+@charset "utf-8";
+body{
+	margin:auto;
+	text-align:center;
+	}
+
+
+nav {
+	margin-top:50px;
+	left:0;
+	right:0;
+    z-index: 20;
+    background:;
+    width: 310px;
+    position: absolute;
+  }
+
+  nav li {
+    display: inline;
+    padding-right: 1em;
+  }
+  
+  nav a {
+    background:#339999;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color:#FFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  nav a:hover{
+    background: #339999;
+  }
+
+ .slideshow {
+	 margin:auto;
+	padding-top:160px;
+    position: relative;
+    height: 97px;
+    width: 500px;
+  	overflow: hidden;
+  }
+ .target {
+  position: absolute;
+  top: -20px;
+  right:500px;
+  height: 333px;
+  width: 510px;
+  overflow: hidden;
+ }
+  .target:target {
+	left:-100px;
+ }
+
+img
+{
+
+width: 340px;
+height: 260px;
+}
+

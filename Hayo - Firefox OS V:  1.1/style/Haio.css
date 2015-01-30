@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Duru+Sans&subset=latin,latin-ext);/*-----------------icones da tela inicial-----------------------*/
+img#btn-pontosturisticos {
+position: absolute;
+left: 37%;
+width: 80px;
+height: 80px;
+top: 7%;
+}
+
+img#btn-utilidadepublica {
+position: absolute;
+left: 37%;
+width: 80px;
+height: 80px;
+top: 75%;
+}
+
+img#btn-hospedagem{
+position: absolute;
+top:28%;
+width: 80px;
+height: 80px;
+left: 5%;}
+
+img#btn-sobre {
+position: absolute;
+top: 41.6%;
+width: 80px;
+height: 80px;
+left: 37%;
+}              
+
+img#btn-eventos {
+position: absolute;
+top: 28%;
+width: 80px;
+height:80px;
+left: 70%;} 
+
+img#btn-restaurantes {
+position: absolute;
+top: 55%;
+width: 80px;
+height: 80px;
+left: 70%;
+}
+
+img#btn-transportes {
+position: absolute;
+top: 55%;
+width: 80px;
+height: 80px;
+left: 5%;
+}
+body{
+background-repeat: white;}
+#top-index-bar {
+position: absolute;
+border: 1px solid black;
+text-align: center;
+color: #FFF;
+width: 99.5%;
+height: 6%;
+}
+
+ /*-------------------------texto da tela inicial--------------------------*/
+
+#txponto
+{
+font-family: 'Duru Sans', sans-serif;
+color:#fff;
+position: absolute;
+top: 22%;
+left: 41.5%;
+font-size: 13px;
+
+}
+#txpontot
+{
+font-family: 'Duru Sans', sans-serif;
+color:#fff;
+position: absolute;
+top: 25%;
+left: 37.8%;
+font-size: 13px;
+}
+#txtransporte
+{
+font-family: 'Duru Sans', sans-serif;
+color:#fff;
+position: absolute;
+top:69.7%;
+left: 4%;
+font-size: 13px;
+}
+
+#txhospedagem
+{
+font-family: 'Duru Sans', sans-serif;
+color:#fff;
+position: absolute;
+top: 43%;
+left: 3.6%;
+font-size: 13px;
+}
+
+#txrestaurante
+{
+font-family: 'Duru Sans', sans-serif;
+color:#fff;
+position: absolute;
+top: 69.7%;
+left: 68.5%;
+font-size: 13px;
+}
+
+#txcabralia
+{
+font-family: 'Duru Sans', sans-serif;
+color:#fff;
+position: absolute;
+top: 56%;
+left: 40.5%;
+font-size: 13px;
+}
+
+#txservicos
+{
+font-family: 'Duru Sans', sans-serif;
+color:#fff;
+position: absolute;
+top: 90%;
+left: 40.5%;
+font-size: 13px;
+}
+
+#txeventos
+{
+font-family: 'Duru Sans', sans-serif;
+color:#fff;
+position: absolute;
+top: 43%;
+left: 73.5%;
+font-size: 13px;
+}

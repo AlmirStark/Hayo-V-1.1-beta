@@ -1,0 +1,149 @@
+
+
+/*--------------css nao uzado-----------------------------------*/
+img#volta
+{
+
+position: absolute;
+top: 9px;
+width: 15px;
+left: 3px;
+position: fixed;
+}
+
+img#tempo
+{
+
+position: absolute;
+top: 7px;
+width: 25px;
+height: 38px;
+left: 90%;
+position: fixed;
+}
+
+div#f
+{
+background:linear-gradient(to bottom, rgba(205,103,35,1) 29%,rgba(187,72,45,1) 66%);;
+position: absolute;
+top:0%;
+width: 20px;
+height:52px;
+left: 0%;
+border-right: solid 1px rgba(255, 255, 255, 0.67);
+position: fixed;
+}
+div#filtro
+{
+background:linear-gradient(to bottom, rgba(205,103,35,1) 29%,rgba(187,72,45,1) 66%);;
+position: absolute;
+top:0%;
+width: 80px;
+height:52px;
+left: 87%;
+border-left: solid 1px rgba(255, 255, 255, 0.67);
+position: fixed;
+
+}
+ 
+
+div#f:hover
+{
+background: rgba(0, 0, 0, 0.57);
+
+    
+}
+
+div#filtro:hover
+{
+background: rgba(0, 0, 0, 0.57);
+    
+}
+
+
+div#h
+{
+background:linear-gradient(to bottom, rgba(205,103,35,1) 29%,rgba(187,72,45,1) 66%);
+position: absolute;
+top:0%;
+width: 100%;
+height:50px;
+left: 0%;
+box-shadow:1px 1px 6px  -1px black;
+padding: 1px;
+position: fixed;
+}
+
+img#foto
+{
+
+position: absolute;
+top:70px;
+height:160px;
+width: 226px;
+left: 25px;
+box-shadow:1px -3px 2px  -1px black;
+
+}
+p
+{
+color: black;
+}
+
+#photo
+{
+float: left;
+margin-top: -73px;
+width: 50px;
+margin-left: 82%;
+border-radius: 60px;
+margin-bottom: 3px;
+margin-right:12px;
+}
+
+
+#photocolor
+{
+float: left;
+margin-top: -77px;
+width: 18px;
+height: 58px;
+margin-left: %;
+margin-bottom: 3px;
+}
+
+
+p#nome
+{ 
+   font-family: 'Fira Sans', sans-serif;
+   color: black; 
+   margin-left:40px; 
+   font-size: 20px;
+    border-bottom: 0px;
+    
+}
+
+
+
+p#tipo
+{
+   font-family: 'Fira Sans', sans-serif;
+   color:#6f6c6c; 
+   margin-left:40px; 
+   margin-top: -14px;
+}
+
+p#tipo-ponto
+{
+    font-family: 'Fira Sans', sans-serif; 
+   font-size: 20px;
+   margin-left:40px; 
+   
+   width:300px;
+   height:px;
+   padding:12px;}
+
+    li#lista
+{
+background: red;
+}

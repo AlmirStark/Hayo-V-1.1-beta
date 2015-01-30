@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- deixando o App responsivo -->
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+  <!-- Additional markup to make Building Blocks kind of cross browser -->
+  <link rel="stylesheet" href="cross_browser.css">
+  <link rel="stylesheet" href="style/cross_browser.css">
+
+  <!-- importando componentes do Building blocks -->
+  <link rel="stylesheet" href="style/buttons.css">
+  <link rel="stylesheet" href="style/confirm.css">
+  <link rel="stylesheet" href="style/headers.css">
+  <link rel="stylesheet" href="style/drawer.css">
+  <link rel="stylesheet" href="style/lists.css">
+  <link rel="stylesheet" href="style/scrolling.css">
+  <link rel="stylesheet" href="style/icons.css"> 
+  
+  <!-- CSS criados pelo Almir Stark -->
+    <link rel="stylesheet" href="style/detalhe.css">
+    <link rel="stylesheet" href="style/Haio.css">
+
+    <!-- Transitions -->
+    <link rel="stylesheet" href="transitions.css">
+
+    <!-- Util CSS: some extra tricks -->
+    <link rel="stylesheet" href="util.css">
+    <title>Hayô Tour</title>
+    <script src="js/libs/handlebars-v1.3.0.js"></script>
+    <script src="js/libs/qwest-0.5.5.min.js"></script>
+    <script src="js/libs/moment-with-locales.js"></script>
+    <script src="js/util.js"></script>
+</head>
+<body role="application">
+  <div id="loader" class="loader hide"></div>
+
+  <!-- SESSÃO Menu Principal -->
+  <section style="background-size: cover; background-image: url(images/fondoMenuPrincipal.png)" id="menu-principal" role="region" data-position="current">
+    <div id="btnsobre" class="menu-item" data-categoria="sobre" data-title="Sobre Cabrália">
+      <img id="btn-sobre" src="images/cabraliaIcon.png">
+    </div>
+    <div id="btnpontosturisticos" class="menu-item" data-categoria="pontos/" data-title="Pontos Turísticos">
+      <img id="btn-pontosturisticos" src="images/puntosTuristicos@2x.png">
+    </div>
+    <div id="btnhospedagem" class="menu-item" data-categoria="hosp/" data-title="Hospedagens">
+      <img id="btn-hospedagem" src="images/hospedagemIcon.png">
+    </div>
+    <div id="btnrestaurantes" class="menu-item" data-categoria="resta/" data-title="Restaurantes">
+      <img id="btn-restaurantes" src="images/restaurante@2x.png">
+    </div>
+    <div id="btntransportes" class="menu-item" data-categoria="transp/" data-title="Transportes">
+      <img id="btn-transportes" src="images/transporte@2x.png">
+    </div>
+    <div id="btnutilidadepublica" class="menu-item" data-categoria="util/" data-title="Utilidade Pública">
+      <img id="btn-utilidadepublica" src="images/hospital@2x.png">
+    </div>
+    <div id="bteneventos" class="menu-item" data-categoria="even/" data-title="Eventos">
+      <img id="btn-eventos" src="images/eventos@2x.png">
+    </div>
+
+    <h3 id="txponto"> Pontos</h3>
+    <h3 id="txpontot">Turísticos</h3>
+    <h3 id="txcabralia">Cabrália</h3>
+    <h3 id="txhospedagem">Hospedagens</h3>
+    <h3 id="txtransporte">Transportes</h3>
+    <h3 id="txrestaurante">Restaurantes</h3>
+    <h3 id="txservicos">Serviços</h3>
+    <h3 id="txeventos">Eventos</h3>
+  </section>
+  <!-- final do menu principal -->
+
+  <!-- criando o menu principal -->
+  <section id="menu-principal" role="region" data-position="right">
+    <header class="fixed">
+        <a id="btn-buttons-back" class="go-back" href="#">
+        <span class="icon icon-back">back</span>
+      </a>
+    </header>
+    <article class="scrollable header">
+      <div data-type="list">
+        <ul id="menu-list"></ul>
+      </div>
+    </article>
+  </section>
+  <!-- Final de menu -->
+
+  <!--- Criando lista de itens -->
+  <section role="region" id="list-item-page" data-position="right">
+    <header class="fixed">
+      <a id="btn-buttons-back" class="go-back" href="#">
+        <span class="icon icon-back">back</span>
+      </a>
+      <h1 id="item-list-title"></h1>
+    </header>
+    <article class="content scrollable header">
+      <section id="lista" data-type="list">
+        <ul id="item-list"></ul>
+      </section>
+    </article>
+  </section>
+  <!-- Final da lista de itens -->
+
+  <!-- criando tela de detalhes -->
+  <section role="region" id="detalhe-item-page" data-position="right">
+    <header class="fixed">
+      <a id="btn-buttons-back" class="go-back_D" href="#">
+        <span class="icon icon-back">back</span>
+      </a>
+      <h1 id="item-list-title"></h1>
+    </header>
+    <article class="content scrollable header">
+     <div id="detalhe-list">
+     </div> 
+   </article>
+  </section>
+  <!-- Final tela de detalhes -->
+
+   <!-- criando tela de detalhes SOBRE CABRALIA -->
+  <section role="region" id="sobre-cabralia-page" data-position="right">
+    <header class="fixed">
+      <a id="btn-buttons-back" class="go-back_S" href="#">
+        <span class="icon icon-back">back</span>
+      </a>
+
+    </header>
+    <article class="content scrollable header">
+     <div id="detalhe-lista">
+     </div> 
+   </article>
+        <footer id="footer-sobre">
+       <img id="icon-youtube" class="icon-sobre" src="images/youtube.png">
+       <img id="icon-maps"  class="icon-sobre" src="images/maps.png">
+        </footer>
+  </section>
+  <!-- Final tela de detalhes -->
+
+  <!-- template da tela de detalhes SOBRE CABRALIA-->
+  <script id="sobre-cabralia-template" type="text/x-handlebars-template">
+    {{# each detalhe}}
+      
+      <img id="sobre-detalhe" src = {{ imagens01 }}>
+      <form>    
+        <div id="sobre">       
+         <p id="sobre-texto"> {{ descricao }}
+        </p>
+        </div>
+        <img id="sobre" src = {{ imagens02 }}>
+        <h2><em>História:</em></h2>
+        <div id="sobre"> 
+         <p id="sobre"> {{ historia }}
+        </P>
+        </div> 
+        <h2><em>Localização</em></h2>
+        <img id="sobre" alt = "mapa1" src = {{ mapa01 }}>
+        <h2><em>na Bahia</em></h2>
+        <img id="sobre" alt = "mapa02" src = {{ mapa02 }}>
+        <h2><em>no Brasil</em></h2> 
+   
+      </form>
+      
+      <div class="border-bottom"></div>
+      
+    {{/each}}
+  </script>
+
+  <!-- Template do Menu principal -->
+  <script id="menu-list-template" type="text/x-handlebars-template">
+    {{#each pontos}}
+    <li class = "menu-item" data-categoria = "{{ categoria }}"
+    data-title = "{{ nome }}" >
+      <a id = "btn-{{ categoria }}"
+    href = "#" >
+      <p> {{nome}} </p>
+          </a >
+      </li>
+      {{/each }}
+  </script>
+    
+    
+    
+    
+
+  <!-- teste PRIMEIRA LISTAGEM DA TELA DE ULTILIDADES <<emcima da tela de pontos turisticos>>
+  <script id="item-list-template" type="text/x-handlebars-template">
+    {{#each itens}}
+    <li id="segunda-lista-ultilidades" class = "item-lista" data-id = "{{ _id }}" data-colection = "{{ categoria }}" data-tel = {{ telefone }}>
+      <img class="img-teste" alt ="list" src = "icones/glasses-48.png">
+         <aside class = "pack-end" >
+        <img class="arrow" src="images/arrow.png" >
+      </aside>
+          <a id = "btn-{{ _id }}"
+          href="#" >
+           <p class="nome-teste">teste</p >
+          </a >
+      </li>
+      {{/each}}
+  </script>
+  </script>
+
+<!-- teste SEGUNDA LISTA DA TELA DE ULTILIDAS <<emcima da tela de transporte>>MEXENDO-->
+
+                                       <!--TIPO pago 1 -->
+
+    <script id="item-list-transp-template" type="text/x-handlebars-template">
+    {{#each itens}}
+    <li id="segunda-lista-ultilidades" class = "item-lista" data-id = "{{ _id }}" data-colection = "{{ categoria }}" data-tel = {{ telefone }}>
+      <img class="icon-telefone" alt = "{{ name }}"  src="images/telefone-ultilidade.png">
+         <aside class = "pack-end" >
+        <img class="img-pago-dois" src="images/pago2.jpg" >
+      </aside>
+          <a id = "btn-{{ _id }}"
+          href="#" >
+           <p class="nome-pago-dois"> Pago2</p >
+           <p class="numero-pago-dois">{{ tipo }} {{ placa }}</p>  
+           <p class="numero-pago-dois"> {{ formatTelefone telefone }} </p>
+          </a >
+      </li>
+       
+                                        <!--TIPO 2 -->
+        
+         <li id="segunda-lista-ultilidades" class = "item-lista" data-id = "{{ _id }}" data-colection = "{{ categoria }}" data-tel = {{ telefone }}>
+             <img class="icon-telefone" alt = "{{ name }}"  src="images/telefone-ultilidade.png">
+         <aside class = "pack-end" >
+             
+             </aside>
+                 
+          <a id = "btn-{{ _id }}"
+          href="#" >
+           <p class="nome-pago-dois"> Pago1 </p >
+           <p class="numero-pago-dois">{{ tipo }} {{ placa }}</p>  
+           <p class="numero-pago-dois"> {{ formatTelefone telefone }} </p>
+          </a >
+      </li>
+       
+                                          <!--TIPO 3-->
+        
+         <li id="segunda-lista-ultilidades" class = "item-lista" data-id = "{{ _id }}" data-colection = "{{ categoria }}" data-tel = {{ telefone }}>
+             <img class="icon-telefone" alt = "{{ name }}"  src="images/telefone-ultilidade.png">
+         <aside class = "pack-end" >
+             
+      </aside>
+                 
+          <a id = "btn-{{ _id }}"
+          href="#" >
+           <p class="nome-gratis"> gratis </p>
+           <p class="numero-gratis">{{ tipo }} {{ placa }}</p>  
+           <p class="numero-gratis"> {{ formatTelefone telefone }} </p>
+          </a >
+      </li>
+        
+      {{/each}}
+  </script>
+
+
+
+
+
+    
+    <!-- COMENTADO PARA TESTES USA DEPOIS Template da listagem de intens do DB  -->
+    
+      <script id="item-list-template" type="text/x-handlebars-template">
+    {{#each itens}}
+    <li class = "item-list" data-id = "{{ _id }}" data-colection = "{{ categoria }}">
+      <aside class = "pack-end" >
+      <img class="outros" alt = "{{ name }}" src = "{{ imagens }}" >
+      </aside>
+          <a id = "btn-{{ _id }}"
+          href="#" >
+          <p>{{ nome }}</p >
+          {{#if telefone }}
+            <p> {{formatTelefone telefone}} </p>
+          {{/if}}  
+          </a >
+      </li>
+      {{/each}}
+  </script>
+
+
+    
+    
+    <!-- Template da listagem TRANSPORTES COMENTADO PARA TESTES -->
+<!--
+
+    <script id="item-list-transp-template" type="text/x-handlebars-template">
+    {{#each itens}}
+    <li id="transporte" class = "item-lista" data-id = "{{ _id }}" data-colection = "{{ categoria }}" data-tel = {{ telefone }}>
+      <img class="img-transporte" alt = "{{ name }}" src = "{{ imagens }}" >
+         <aside class = "pack-end" >
+        <img class="img-telefone" src="images/telefone2.png" >
+      </aside>
+          <a id = "btn-{{ _id }}"
+          href="#" >
+           <p class="nome"> {{ nome}} </p >
+           <p class="numero">{{ tipo }} {{ placa }}</p>  
+           <p class="numero"> {{ formatTelefone telefone }} </p>
+          </a >
+      </li>
+      {{/each}}
+  </script>
+       
+    -->
+
+  <!-- Template da listagem de intens de EVENTOS -->
+  <script id="item-list-eventos-template" type="text/x-handlebars-template">
+    {{#each itens}}
+    <li class = "item-list" data-id = "{{ _id }}" data-colection = "{{ categoria }}">
+      <aside class = "pack-end" >
+      <img class="eventos" alt = "{{ name }}" src = "{{ imagens }}" >
+      </aside>
+          <a id = "btn-{{ _id }}"
+          href="#" >
+          <p>{{ nome }}</p >
+          <p> {{ formataData dia 'completa' }} </p>
+          </a >
+      </li>
+      {{/each}}
+  </script>
+
+  <!-- template da tela de detalhes -->
+  <script id="detalhe-tela-template" type="text/x-handlebars-template">
+    {{# each detalhe}}
+      <div>
+      <img id="detalhe" alt = "{{ name }}" src = "{{ imagens }}">
+       <div id="hdetalhe">     
+          <h2 id="titulo">{{ nome }}</h2>
+        </div>
+          <form id="texto">
+          <div id="texto">
+             {{ descricao }}
+        </div>
+        {{#if telefone}}
+          <div id="contato"> 
+          <img id="telef" data-tel={{ telefone }} src="images/Fone.png"/> <p id="telef">{{ formatTelefone telefone }} </p>
+        {{/if}}
+        </br>
+        {{#if endereco }}
+        <div class="icons-tela-detalhe">
+        <img id="img-endereco" data-latitude= {{ latitude }} data-longitude = {{ longitude }} src="images/maps.png"/>
+        <img id="img-youtube-video"src="images/youtube.png">
+        </div>
+        {{/if}}
+        </div>
+      </form>
+    {{/each}}
+  </script>
+
+  <!-- template da tela de detalhes de EVENTOS-->
+  <script id="detalhe-eventos-template" type="text/x-handlebars-template">
+    {{# each detalhe}}
+      <div>
+      <img id="detalhe" alt = "{{ name }}" src = "{{ imagens }}">
+       <div id="hdetalhe">     
+          <h2 id="titulo">{{ nome }}</h2>
+        </div>
+          <form id="texto-new">
+          <div id="texto-new">
+             {{ descricao }}
+        </div>
+        <p>Data: {{ formataData dia 'completa' }} </p>
+        <div class="box-contato"><div class="contato"><p class="text-contato">Contatos</p></div></div>
+      
+        <div id="contato"> 
+          <img id="img-telefone-new" data-tel={{ telefone }} src="images/Fone.png"/> <p id="telefone-new">Telefone</p>
+          <img id="img-facebook" data-face={{ fanpage }} src="images/facebook.png"/><p id="facebook-conteudo">Fanpage</p>
+          <img id="img-site" data-web={{ website }} src="images/www.png"/><p id="site-conteudo">Website</p> 
+          <img id="img-endereco-new" data-latitude={{ latitude }} data-longitude ={{ longitude }} src="images/maps.png"/><p id="endereco-conteudo-new">Mapa</p>
+         </div>
+        </form>
+    {{/each}}
+  </script>
+  <!-- Fim dos templetes -->
+
+  <!-- chamadas para os JavaScrip -->
+  <script defer src="js/app.js"></script>
+</body>
+</html>
