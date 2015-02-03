@@ -12,7 +12,7 @@
 .icon::before {
   position: absolute;
   width: 3rem;
-  height: 3rem;
+  height: 60px;
   font-family: 'Gaia-icons';
   font-size: 3rem;
   color: #fff;

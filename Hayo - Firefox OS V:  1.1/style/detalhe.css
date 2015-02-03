@@ -117,6 +117,7 @@ height: 100%;
 background:#f0f0f0;
 margin: 0px 0px 0px 0px;
 padding: 0px;
+z-index: 1px;
 }
 
 /*------------css nao uzando--------------------------------------*/
@@ -154,15 +155,17 @@ left: 135px;
 }
 
 /*----------css barra de titulo da tela de detalhe--------*/
-span#hdetalhe
+#hdetalhe
 {
-background:#009688;
+background:#2196F3;
 position: absolute;
-top:-2.5em;
+top:em;
 width: 100%;
-height:44px;
+height:60px;
 color:#fff;
 border-bottom:solid 1px white;
+z-index:1;
+
 }
 
 h2#titulo
@@ -172,13 +175,14 @@ overflow: hidden;
 text-overflow: ellipsis;
 border: medium none;
 margin: 0px;
-color: whitw;
-width: 90%;
-line-height: 2rem;
+color: white;
+width: 100%;
+text-indent: 70px;
+line-height: 5rem;
 list-style: outside none none;
-font-size: 27px;
-padding-top: 15px;
-padding-left: 8px;
+font-size: 28px;
+padding-top: 5px;
+
 }
 /*---------------------------------tela de eventos----------------*/
 /*img new tela detalhe---------------*/
@@ -337,9 +341,9 @@ text-align: center;
 
 .span-tel
 {
-    width: 6rem;
-    height: 6rem;
-    border-radius:7rem;
+    width: 70px;
+    height: 70px;
+    border-radius:100%;
     bottom: 7px;
     right: 7px;
     position: absolute;

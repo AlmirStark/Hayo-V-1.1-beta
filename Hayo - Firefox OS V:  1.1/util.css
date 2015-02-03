@@ -39,12 +39,19 @@ section[role="region"] > header.fixed:first-child {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   position: relative;
+  overflow-x: none;
 }
 
 .scrollable.header {
-  height: calc(100% - 5rem);
-  top: 5rem;
+  height: calc(100% - 60px);
+  top: 60px;
 }
+
+.scrollable.detalhe{
+  height: calc(100%);
+  top:0rem;
+}
+
 
 /* Setting proper paddings and margins */
 .content {
@@ -61,6 +68,7 @@ section[role="region"] .content header:first-child {
 
 .content [data-type="list"] {
   margin: -1.5rem;
+  padding: 
 }
 
 .center {
@@ -69,6 +77,7 @@ section[role="region"] .content header:first-child {
 
 [data-type="list"] {
   padding: 0;
+  ma
 }
 
 [data-type="list"] ul {
@@ -97,10 +106,13 @@ h2 { /* Subheader, Dialog title */
   font-weight: normal;
 }
 
-p {
+p.texto {
   font-size: 1.9rem;
   font-weight: normal;
   line-height: 2.5rem;
+  margin-top: 5.6rem;
+  text-indent: 10px;
+  padding: 6px;
 }
 
 p.large { /* Dialog body */

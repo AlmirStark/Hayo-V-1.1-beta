@@ -104,13 +104,13 @@
 
   <!-- criando tela de detalhes -->
   <section role="region" id="detalhe-item-page" data-position="right">
-    <header class="fixed">
+    <header class="fixed" id="header-detalhe">
       <a id="btn-buttons-back" class="go-back_D" href="#">
         <span class="icon icon-back">back</span>
       </a>
       <h1 id="item-list-title"></h1>
     </header>
-    <article class="content scrollable header">
+    <article class="scrollable detalhe">
      <div id="detalhe-list">
      </div> 
    </article>
@@ -183,26 +183,7 @@
     
     
 
-  <!-- teste PRIMEIRA LISTAGEM DA TELA DE ULTILIDADES <<emcima da tela de pontos turisticos>>
-  <script id="item-list-template" type="text/x-handlebars-template">
-    {{#each itens}}
-    <li id="segunda-lista-ultilidades" class = "item-lista" data-id = "{{ _id }}" data-colection = "{{ categoria }}" data-tel = {{ telefone }}>
-      <img class="img-teste" alt ="list" src = "icones/glasses-48.png">
-         <aside class = "pack-end" >
-        <img class="arrow" src="images/arrow.png" >
-      </aside>
-          <a id = "btn-{{ _id }}"
-          href="#" >
-           <p class="nome-teste">teste</p >
-          </a >
-      </li>
-      {{/each}}
-  </script>
-  </script>
 
-<!-- teste SEGUNDA LISTA DA TELA DE ULTILIDAS <<emcima da tela de transporte>>MEXENDO-->
-
-                                       <!--TIPO pago 1 -->
 
     <script id="item-list-transp-template" type="text/x-handlebars-template">
     {{#each itens}}
@@ -270,38 +251,17 @@
           <a id = "btn-{{ _id }}"
           href="#" >
           <p>{{ nome }}</p >
-          {{#if telefone }}
-            <p> {{formatTelefone telefone}} </p>
-          {{/if}}  
-          </a >
-      </li>
-      {{/each}}
-  </script>
-
-
-    
-    
-    <!-- Template da listagem TRANSPORTES COMENTADO PARA TESTES -->
-<!--
-
-    <script id="item-list-transp-template" type="text/x-handlebars-template">
-    {{#each itens}}
-    <li id="transporte" class = "item-lista" data-id = "{{ _id }}" data-colection = "{{ categoria }}" data-tel = {{ telefone }}>
-      <img class="img-transporte" alt = "{{ name }}" src = "{{ imagens }}" >
-         <aside class = "pack-end" >
-        <img class="img-telefone" src="images/telefone2.png" >
-      </aside>
-          <a id = "btn-{{ _id }}"
-          href="#" >
-           <p class="nome"> {{ nome}} </p >
-           <p class="numero">{{ tipo }} {{ placa }}</p>  
-           <p class="numero"> {{ formatTelefone telefone }} </p>
-          </a >
-      </li>
-      {{/each}}
-  </script>
+            <p class="P-Local">Local:</p>
        
-    -->
+          </a >
+      </li>
+      {{/each}}
+  </script>
+
+
+    
+    
+
 
   <!-- Template da listagem de intens de EVENTOS -->
   <script id="item-list-eventos-template" type="text/x-handlebars-template">
