@@ -43,8 +43,8 @@ section[role="region"] > header.fixed:first-child {
 }
 
 .scrollable.header {
-  height: calc(100% - 60px);
-  top: 60px;
+  height: calc(100% - 55px);
+  top: 55px;
 }
 
 .scrollable.detalhe{
@@ -107,10 +107,10 @@ h2 { /* Subheader, Dialog title */
 }
 
 p.texto {
-  font-size: 1.9rem;
+  font-size: 24px;
   font-weight: normal;
-  line-height: 2.5rem;
-  margin-top: 5.6rem;
+  line-height: 3rem;
+  margin-top: 70px;
   text-indent: 10px;
   padding: 6px;
 }

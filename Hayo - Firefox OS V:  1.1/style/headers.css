@@ -8,12 +8,12 @@ section[role="region"] > header:first-child {
   display: block;
   z-index: 2;
   padding: 0;
-  height: 60px;
+  height: 55px;
   border: none;
 }
 
 section[role="region"] > header:first-child h1 {
-  font-size: 26px;
+  font-size: 30px;
   text-align: center;;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -54,11 +54,11 @@ section[role="region"] > header:first-child button {
   overflow: hidden;
   float: left;
   min-width: 5rem;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border: none;
   background: none;
-  padding: 4px 0rem 0px 13px;
+  padding: 2px 0rem 0px 13px;
   margin: 0;
   font-weight: 400;
   font-size: 1.5rem;
