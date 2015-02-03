@@ -342,7 +342,6 @@ text-align: center;
     border-radius:100%;
     bottom: 7px;
     right: 7px;
-    position: absolute;
     background: #4caf50;
     z-index:0;
     position: fixed;
