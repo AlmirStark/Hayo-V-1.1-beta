@@ -1,0 +1,15 @@
+{
+  "name": "Hayô Tour",
+  "description": "Informações turisticas da cidade de Santa Cruz Cabrália - BA",
+  "launch_path": "/index.html",
+  "icons": {
+    "60": "/images/app_icon_60.png",
+    "128": "/images/app_icon_128.png"
+  },
+  "version": "1.1",
+  "developer": {
+    "name": "CEIT-PR3G",
+    "url": "http://www.tetceit.blogspot.com"
+  },
+  "default_locale": "pt-br"
+}

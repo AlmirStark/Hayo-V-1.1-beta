@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300);
+*{
+margin: 0;
+padding: 0;}
+.index-menu {
+position: absolute;}
+
+img#btn-sobre {
+left: 37%;
+top: 7%;
+}
+
+#btn-utilidadepublica {
+left: 37%;
+top: 75%;
+}
+#btn-hospedagem{
+top:28%;
+left: 5%;}
+#btn-restaurantes {
+top: 28%;
+left: 70%;}
+#btn-transportes {
+top: 55%;
+left: 70%;}
+#btn-sobre {
+top: 55%;
+left: 5%;
+}
+body{
+background-image: url(/images/fondoMenuPrincipal.png);
+background-repeat: no-repeat;}
+#top-index-bar {
+position: absolute;
+border: 1px solid black;
+text-align: center;
+background-color: #3c23f7;
+color: #FFF;
+width: 99.5%;
+height: 6%;
+font-size: 28px;}
+
+ /*________________texto da pagina*_________________________*/
+
+#txponto
+{
+font-family: 'Fira Sans', sans-serif;
+color: white;
+position: absolute;
+top: 25%;
+left: 128px;
+font-size: 15px;
+
+}
+#txpontot
+{
+font-family: 'Fira Sans', sans-serif;
+color: white;
+position: absolute;
+top: 28%;
+left: 118px;
+font-size: 15px;
+}
+#txcabralia
+{
+font-family: 'Fira Sans', sans-serif;
+color: white;
+position: absolute;
+top:73%;
+left: 21px;
+font-size: 15px;
+}
+
+#txhospedagem
+{
+font-family: 'Fira Sans', sans-serif;
+color: white;
+position: absolute;
+top: 46%;
+left: 5px;
+font-size: 15px;
+}
+
+#txtransporte
+{
+font-family: 'Fira Sans', sans-serif;
+color: white;
+position: absolute;
+top: 73%;
+left: 219px;
+font-size: 15px;
+}
+
+#txrestaurante
+{
+font-family: 'Fira Sans', sans-serif;
+color: white;
+position: absolute;
+top: 46%;
+left: 213px;
+font-size: 15px;
+}
+
+#txservicos
+{
+font-family: 'Fira Sans', sans-serif;
+color: white;
+position: absolute;
+top: 93%;
+left: 125px;
+font-size: 15px;
+}
+

@@ -1,0 +1,260 @@
+@import url(http://fonts.googleapis.com/css?family=Duru+Sans&subset=latin,latin-ext);/*-----------------icones da tela inicial-----------------------*/
+img#btn-pontosturisticos {
+position: absolute;
+width: 80px;
+height: 80px;
+ float: left;
+ margin-left: -40px;
+left: 50%;
+top:7%;
+border-radius:100%;
+box-shadow: 0px 1px 3px 0.5px gray;
+}
+
+img#btn-utilidadepublica {
+position:absolute;
+width: 80px;
+height: 80px;
+bottom:10%;
+float: left;
+ margin-left: -40px;
+left: 50%;
+border-radius:100%;
+box-shadow: 0px 1px 3px 0.5px gray;
+}
+
+img#btn-hospedagem{
+position: absolute;
+top:28%;
+left: 5%;
+width: 80px;
+height: 80px;
+border-radius:100%;
+box-shadow: 0px 1px 3px 0.5px gray;
+}
+
+img#btn-sobre {
+position: absolute;
+top: 41%;
+ float: left;
+ margin-left: -40px;
+left: 50%;
+width: 80px;
+height: 80px;
+border-radius:100%;
+box-shadow: 0px 1px 3px 0.5px gray;
+}              
+
+
+
+img#btn-eventos {
+position: absolute;
+right: 5%;
+  top: 28%;
+width: 80px;
+height: 80px;
+
+  border-radius:100%;
+box-shadow: 0px 1px 3px 0.5px gray;
+} 
+
+img#btn-restaurantes {
+position: absolute;
+right: 5%;
+width: 80px;
+height: 80px;
+top: 55%;
+ border-radius:100%;
+box-shadow: 0px 1px 3px 0.5px gray;
+}
+
+img#btn-transportes {
+position: absolute;
+top: 55%;
+width: 80px;
+height: 80px;
+left: 5%;
+ border-radius:100%;
+box-shadow: 0px 1px 3px 0.5px gray;
+}
+
+#btnutilidadepublica
+{
+  position: absolute;
+  bottom:7%;
+  float: left;
+  margin-left: 0px;
+  left: 50%;
+  
+}
+
+
+#btntransportes
+{
+  position: absolute;
+  left: 5%;
+  top: 55%;
+  
+}
+
+#btnrestaurantes
+{
+  position: absolute;
+  top:55%;
+  right: 5%;
+}
+
+#btnsobre
+
+{
+   position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  float: left;
+  margin-left: 0px;
+  left: 50%;
+}
+
+#bteneventos
+
+{
+  position: absolute;
+  right: 5%;
+  top: 28%;
+  float: left;
+ 
+}
+
+#btnpontosturisticos
+
+{
+  position: absolute;
+  float: left;
+   margin-left: px;
+   left: 50%;
+   top:7%;
+ 
+}
+
+#btnhospedagem
+{
+    position: absolute;
+    top:28%;
+    left: 5%;
+  
+}
+
+
+body{
+background-repeat: white;}
+#top-index-bar {
+position: absolute;
+border: 1px solid black;
+text-align: center;
+color: #FFF;
+width: 99.5%;
+height: 6%;
+}
+
+ /*-------------------------texto da tela inicial--------------------------*/
+
+#txponto
+{
+font-family:Arial,sans-sarif;
+font-size: 17px;
+color:#fff;
+margin-top:83px;
+position:absolute;
+margin-left: ;
+float: left;
+margin-left: -28px;
+left: 50%;;
+
+}
+#txpontot
+{
+font-family:Arial,sans-sarif;
+font-size: 17px;
+color:#fff;
+margin-top:99px;
+position:absolute;
+margin-left: ;
+float: left;
+ margin-left: -40px;
+left: 50%;
+}
+#txtransporte
+{
+font-family:Arial,sans-sarif;
+font-size: 17px;
+color:#fff;
+margin-top:83px;
+position:absolute;
+margin-left: ;
+text-align: center;
+left:-10px;
+}
+
+
+
+
+
+
+#txhospedagem
+{
+font-family:Arial,sans-sarif;
+font-size: 17px;
+color:#fff;
+margin-top:83px;
+position:absolute;
+margin-left:-10px;
+text-align: center;
+}
+
+#txrestaurante
+{
+
+margin-top:83px;
+font-family:Arial,sans-sarif;
+font-size: 17px;
+color:#fff;
+position:absolute;
+text-align: center;
+right: -10px;
+}
+
+#txcabralia
+{
+font-family:Arial,sans-sarif;
+font-size: 17px;
+color:#fff;
+margin-top: 83px;
+position:absolute;
+float: left;
+margin-left: -33px;
+left: 50%;
+}
+
+#txservicos
+{
+font-family: Arial,sans-sarif;
+font-size: 17px;
+color:#fff;
+margin-top: 3px;
+position:absolute;
+float: left;
+margin-left: -36px;
+left: 50%;
+}
+
+#txeventos
+{
+
+color:#fff;
+margin-top: 83px;
+position:absolute;
+font-family: Arial,sans-sarif;
+font-size: 17px;
+text-align: center;
+right: 8px;
+}
